@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Macondo&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        overflow-x: hidden;
+    }
+</style>
+<body>
+    <nav class="nav-bar">
+        <ul class="nav">
+            <li class="nav-link home"><a href="/index.html">Home</a></li>
+            <li class="nav-link gallery"><a href="/Gallery.html">Gallery</a></li>
+            <li class="nav-link contact"><a href="/Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="contact-section">
+    <h1 class="con-head">Contact Us</h1>
+    <form method="post">
+        <label>First Name:</label>
+        <input type="text" id="first-name" name="first_name" placeholder="First Name">
+        
+        <label>Last Name:</label>
+        <input type="text" id="last-name" name="last_name" placeholder="Last Name">
+        
+        <label>Contact Number:</label>
+        <input type="tel" id="contact-number" name="contact_number" placeholder="Contact Number">
+        
+        <label>Vehicle Number:</label>
+        <input type="text" id="vehicle-number" name="vehicle_number" placeholder="Vehicle Number">
+        
+        <label>Vehicle Category:</label>
+        <select id="vehicle-category" name="vehicle_category">
+            <option value="small-car">Small Car</option>
+            <option value="sedan">Sedan</option>
+            <option value="van">Van</option>
+        </select>
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" placeholder="Type your Message here"></textarea>
+        
+        <button type="submit">Submit</button>
+    </form>
+    </div>
+    
+</body>
+</html>
