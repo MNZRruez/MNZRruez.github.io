@@ -62,7 +62,7 @@ a{
 
 
 .banner{
-   background-image: url('/images/ecstasy.jpg');
+   background-image: url('./images/ecstasy.jpg');
    height: 100vh;
    width: 100%;
    background-size: cover; 
@@ -114,7 +114,7 @@ a{
 }
 
 .description{
-    background: url(/images/lambo.jpg);
+    background: url(./images/lambo.jpg);
     background-size: cover; 
     background-repeat: no-repeat;
     background-position: center center;
@@ -139,7 +139,7 @@ a{
     line-height: 30px;
 }
 .table{
-    background: url(/images/bmw.jpg);
+    background: url(./images/bmw.jpg);
     background-size: cover; 
     background-repeat: no-repeat;
     background-position: center center;
@@ -194,7 +194,7 @@ table{
   }
   
 .grid-item {
-    background: url(/images/imagg.jpg);
+    background: url(./images/imagg.jpg);
     background-size: cover; 
     background-repeat: no-repeat;
     background-position: center center;
@@ -209,11 +209,14 @@ table{
 
 .contact-section{
     color: whitesmoke;
-    background-color: black;
-    width: 60%;
-    height: 70vh;
+    background-color: rgba(39, 39, 40, 0.4);
+    width: 50%;
+    min-width: fit-content;
+    height: fit-content;
     margin-top: 100px;
     margin-bottom: 150px;
+    padding: 30px;
+    border-radius: 10px;
 }
 
 form {
