@@ -1,0 +1,389 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    color: whitesmoke;
+    cursor: default;
+}
+
+a{
+    text-decoration: none;
+    color:antiquewhite;
+}
+
+.nav-bar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999999;
+
+}
+
+.nav-link{
+    list-style: none;
+    z-index: 2222;
+    padding: 2px 10px;
+    border-radius: 50px;
+    transition: all 0.4s ease-in-out;
+
+}
+.nav-link:hover{
+    background-color: rgba(61, 60, 60, 0.5);
+    border-radius: 50px;
+    padding: 2px 10px;
+    color: rgb(241, 210, 171);
+
+}
+
+.nav-link a{
+    color: inherit;
+}
+
+
+
+
+.nav{
+    background-color: rgb(0, 0, 0);
+    height: 5vh;
+    width: 100%;
+    font-size: 100%;
+    font-weight: 350;
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 40%;
+}
+
+
+
+.banner{
+   background-image: url('../res/ecstasy.jpg');
+   height: 100vh;
+   width: 100%;
+   background-size: cover; 
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-color: black; 
+   padding: 50px; 
+}
+
+.home-banner{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: fit-content;
+    top: 50%;
+    right: 25%;
+    transform: translate(50%,-50%);
+}
+
+.title{
+    font-family: 'Macondo', cursive;
+    z-index: 5000;
+    display: flex;
+    color:rgb(250, 235, 215, 0.9);
+    font-size: 600%;
+    text-align: justify;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro{
+    width: 400px;
+    color:rgb(250, 235, 215, 0.9);
+    font-family: 'Dancing Script', cursive;
+    font-size: 23px;
+    text-align: justify;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(48, 48, 47, 0.3);
+    padding: 15px;
+    margin-top: 30px;
+    border-radius: 20px;
+    
+}
+
+.description{
+    background: url("../res/lambo.jpg");
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: black;
+    height: 50vh;
+    width: 100%;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.description-p{
+    background-color: rgba(6, 6, 6, 0.6);
+    font-family: 'Poppins', sans-serif;
+    width: 60%;
+    padding: 40px;
+    border-radius: 15%;
+    font-size: 20px;
+    max-height: 50vh;
+    max-width: 100%;
+    letter-spacing: 1px;
+    line-height: 30px;
+
+}
+.table{
+    background: url("../res/bmw.jpg");
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: black;
+    width: 100%;
+    max-width: 100%;
+    border-collapse: collapse;
+    height: 50vh;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+table{
+    width: 100%;
+    max-width: 100%;
+    border-collapse: collapse;
+}
+
+.table-box{
+    background-color: rgba(6, 6, 6, 0.8);
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9px;
+}
+
+.table table td, th{
+    border: 1px solid rgb(255, 255, 255);
+    color: aqua;
+    border-radius: 9px;
+    padding: 13px 33px;
+    font-size: 20px;
+    text-align: center;
+}
+
+@media screen and (max-width: 1000px){
+    .description-p{
+        font-size: 3vh;
+        font-size: 3vw;
+        width: fit-content;
+    }
+    .table table td, th{
+        font-size: 2vh;
+        font-size: 2vw;
+        width: fit-content;
+    }
+
+}
+
+footer{
+    background-color: black;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyrights{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12px;
+}
+
+
+
+
+
+/* Gallery */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 100%;
+    height: 100vh;
+    padding: 50px;
+    background-color: black;
+    margin-top: 5vh;
+
+  }
+  
+.grid-item {
+    /* background: url(./images/imagg.jpg);
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: black; */
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+
+.grid1{
+    background: url("../res/img1.jpg");
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: black;
+}
+.grid2{
+    background: url("../res/img2.jpg");
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: black;
+}
+.grid3{
+    background: url("../res/img3.jpg");
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: black;
+}
+.grid4{
+    background: url("../res/img4.jpg");
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: black;
+}
+.grid5{
+    background: url("../res/img5.jpg");
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: black;
+}
+.grid6{
+    background: url("../res/img6.jpg");
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: black;
+}
+.grid7{
+    background: url("../res/img7.jpg");
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: rgb(0, 0, 0);
+}
+.grid8{
+    background: url("../res/img8.jpg");
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: black;
+}
+.grid9{
+    background: url("../res/img9.jpg");
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: black;
+}
+.grid10{
+    background: url("../res/img10.jpg");
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: black;
+}
+.grid11{
+    background: url("../res/img11.jpg");
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: black;
+}
+.grid12{
+    background: url("../res/img12.jpg");
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: black;
+}
+
+
+/* Contact Page */
+
+.contact-section{
+    color: whitesmoke;
+    background-color: rgba(39, 39, 40, 0.4);
+    width: 50%;
+    min-width: fit-content;
+    height: fit-content;
+    margin-top: 100px;
+    margin-bottom: 150px;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+form {
+    max-width: 450px;
+    margin: 10px auto;
+}
+
+.con-head {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="tel"], textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.contact-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+
+
+
+
+
+  
