@@ -166,28 +166,28 @@ section{
 }
 
 .sec1{
-    display: none !important;
+    display: none;
     background-color: inherit;
 }
 .sec2{
-    display: none !important;
+    display: none;
     background-color: inherit;
 }
 
 .sec3{
-    display: none !important;
+    display: none;
     background-color: rgb(21, 90, 90);
 }
 .sec4{
-    display: none !important;
+    display: none;
     background-color: rgb(234, 96, 96);
 }
 .sec5{
-    display: none !important;
+    display: none;
     background-color: rgb(59, 223, 0);
 }
 .sec6{
-    display: none !important;
+    display: none;
     background-color: rgb(41, 16, 198);
 }
 
