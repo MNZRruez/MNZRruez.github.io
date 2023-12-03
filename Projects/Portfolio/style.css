@@ -16,7 +16,6 @@ nav, a{
 }
 
 
-
 #side-bar{
     background-color: #181818;
     width: 135px;
@@ -90,9 +89,12 @@ nav, a{
     line-height: 90px;
     letter-spacing: 2px;
     line-height: 95px;
+    animation: floatAnimation .3s ease-in-out;
+
 }
 #main-head1{
     padding-top: 100px;
+
 }
 
 #main-sub{
@@ -145,11 +147,13 @@ nav, a{
     width: 100%;
     max-width: 300px;
     height: 60px;
-    margin-right: 100px;
+    margin-right: 18vw;
     border: 1px solid bisque;
     transition: all 0.3s ease-out;
-    border-radius: 1px;
+    border-radius: 1.3px;
     cursor: pointer;
+    animation: vibrate 2s infinite alternate ;
+
 }
 
 .contact-btn:hover{
@@ -159,36 +163,51 @@ nav, a{
     
 }
 
+
+
 section{
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: auto;
     transition: all 0.3s ease-in-out;
+    
 }
 
 .sec1{
     display: none;
     background-color: inherit;
+    margin-left: 10%;
+
 }
 .sec2{
     display: none;
     background-color: inherit;
+    margin-left: 10%;
+
 }
 
 .sec3{
     display: none;
-    background-color: rgb(21, 90, 90);
+    background-color: inherit;
+    margin-left: 10%;
+
 }
 .sec4{
     display: none;
     background-color: rgb(234, 96, 96);
+    margin-left: 10%;
+
 }
 .sec5{
     display: none;
     background-color: rgb(59, 223, 0);
+    margin-left: 10%;
+
 }
 .sec6{
     display: none;
     background-color: rgb(41, 16, 198);
+    margin-left: 10%;
+
 }
 
 .active{
@@ -209,38 +228,104 @@ section{
     color: whitesmoke;
     align-items: center;
     justify-content: center;
-    height: 700px;
     cursor: default;
+    animation: floatAnimation .3s ease-in-out;
+
 }
 
-#about-p p{
-    width: 60%;
-    font-size: 20px;
-    letter-spacing: 3px;
+#about-p div{
+    width: 80%;
+    font-size: 3vh;
+    letter-spacing: 0.1vh;
     line-height: 34px;
-    text-align: justify;
+    text-align: left;
+    padding: 5vh;
 
 }
 #i{
     transition: all 0.3s ease-out;
     font-size: 40px;
     position: absolute;
-    transform: translateY(-5px);
+    color: bisque;
 }
 
-#about-p p:hover{
+#i:hover{
+    animation: vibrate 2s infinite alternate ;
+}
+
+/* body:hover{
     #i{
         color: bisque;
-        animation: animate 0.6s;
+        animation: animate 0.4s;
     }
+    
+    
+} */
+
+
+
+/* SKILL SECTION */
+
+
+.skill {
+    position: relative;
+
+}
+
+
+.bg-effect {
+    position: relative;
+    width: 70%;
+    height: 70%;
+}
+
+.item {
+    position: absolute;
+    text-align: center;
+    color: rgb(255, 227, 194, 0.2);
     
 }
 
+.bg-img1 { top: 10%; left: 80%; }
+.bg-img2 { top: 30%; left: 70%; }
+.bg-img3 { top: 50%; left: 60%; }
+.bg-img4 { top: 70%; left: 50%; }
+.bg-img5 { top: 80%; left: 40%; }
+
+.bgm.bg-img6 { top: 40%; left: 25%; }
+.bgm.bg-img7 { top: 30%; left: 5%; }
+.bgm.bg-img8 { top: 60%; left: 85%; }
+.bgm.bg-img9 { top: 70%; left: 55%; }
+.bgm.bg-img10 { top: 45%; left: 45%; }
+
+.bg:hover {
+    transform: scale(1.2);
+}
 
 
 
 
+@media screen and (max-width: 1000px){
+    .section{
+        font-size: 3vh;
+        font-size: 3vw;
+        width: fit-content;
+    }
+    #side-bar{
+        display: none;
+    }
 
+}
+
+@keyframes floatAnimation {
+    0% {
+        transform: translateY(-5px);
+    }
+    
+    100% {
+        transform: translateY(0);
+    }
+}
 
 
 
@@ -252,13 +337,26 @@ section{
         transform: scale(1,1) translateY(-5px);
     }
     25% {
-        transform: scale(0.7,1.3) translateY(-5px);
+        transform: scale(0.9,1.1) translateY(-5px);
     }
     50% {
-        transform: scale(1.3,0.8) translateY(-5px);
+        transform: scale(1.1,0.9) translateY(-5px);
     }
     75% {
         transform: scale(0.9,1.1) translateY(-5px);
     }
+}
+
+@keyframes vibrate {
+    0%{
+        transform: scale(1,1);
+    }
+    50%{
+        transform: scale(1, 1.02);
+    }
+    100%{
+        transform: scale(0.98, 1);
+    }
+    /* ... Add more steps as needed */
 }
 

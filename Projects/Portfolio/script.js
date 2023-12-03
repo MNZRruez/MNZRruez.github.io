@@ -64,6 +64,22 @@ function PageTransitions(){
 }
 
 
-
-
 PageTransitions()
+
+document.addEventListener('mousemove', moveDivs);
+
+
+function moveDivs(event) {
+    const moveX = event.clientX / window.innerWidth - 0.5;
+    const moveY = event.clientY / window.innerHeight - 0.5;
+
+    const divs = document.querySelectorAll('.bg');
+    divs.forEach((div) => {
+        div.style.transform = `translate(${moveX * 50}px, ${moveY * 50}px)`;
+    });
+
+    const divs2 = document.querySelectorAll('.bgm');
+    divs2.forEach((div2) => {
+        div2.style.transform = `translate(${moveX * -50}px, ${moveY * -50}px)`;
+    });
+}
