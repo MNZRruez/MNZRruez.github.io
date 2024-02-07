@@ -278,13 +278,15 @@ body{
 }
 
 .contact-left p{
-    padding-bottom: 20px;
+    padding-bottom: 18px;
+    letter-spacing: 1px;
 }
 
 .contact-left p:last-of-type{
     color: #949494;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 300;
+    letter-spacing: 2px;
 
 }
 
@@ -322,10 +324,11 @@ body{
     justify-content: center;
     align-items: center;
     border-radius: 50px;
+    transform: scale(1.1);
 }
 
 .center-links div:hover{
-    
+    transform: scale(1.09);
     cursor: pointer;
     background-color: #C8BEBE;
     
@@ -344,11 +347,13 @@ body{
 }
 
 .contactus-head{
-    font-size: 16px;
+    font-size: 18px;
+    letter-spacing: 1px;
 }
 .contactus-body{
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 200;
+    letter-spacing: 2px;
 }
 .top {
     float: right;
@@ -357,9 +362,9 @@ body{
   height: 0;
   border-left: 55px solid transparent;
   border-right: 55px solid transparent;
-  border-bottom: 80px solid #f1f1f1; /* Change color as needed */
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
+  border-bottom: 75px solid #f1f1f1; /* Change color as needed */
+  border-top-left-radius: 15%;
+  border-top-right-radius: 15%;
   position: relative;
 }
 
@@ -376,6 +381,6 @@ body{
 
 .top:hover{ 
     cursor: pointer;
-    border-bottom: 80px solid #C8BEBE; /* Change color as needed */
+    border-bottom: 75px solid #C8BEBE; /* Change color as needed */
     
 }
