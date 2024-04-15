@@ -1,12 +1,8 @@
 *{
-    padding: 0;
-    margin: 0;
     box-sizing: border-box;
-    scroll-behavior: smooth;
-    font-family: "Poppins";
-
+    margin: 0;
+    padding: 0;
 }
-
 body{
     font-family: "Poppins", sans-serif;
     height: 100%;
@@ -43,13 +39,13 @@ header{
     top: 0;
 }
 
-.logo-con{
+.logo_con{
     width: 15%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.logo-con a{
+.logo_con a{
     width: 100%;
     display: flex;
     justify-content: center;
@@ -63,7 +59,7 @@ img{
     padding: 8px 1px 4px 1px; 
 }
 
-.nav-links{
+.nav_links{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -72,7 +68,7 @@ img{
     width: 40%;
 }
 
-.nav-links li{
+.nav_links li{
     list-style-type: none;
     width: 150px;
     text-align: center;
@@ -85,14 +81,14 @@ img{
     transition: all 0.3s ease-in-out;
 }
 
-.nav-links a{
+.nav_links a{
     text-decoration: none;
     color: #ffffff;
     transition: all 0.3s ease-in-out;
     padding-top: 3px;
 }
 
-.nav-line{
+.nav_line{
     display: none;
     background-color: #05ABAD;
     width: 100%;
@@ -101,12 +97,12 @@ img{
     margin: auto;
 }
 
-.nav-link{
+.nav_link{
     transition: all 0.3s ease-in-out;
     border-bottom: 3px solid #05aaad00;
 }
 
-.nav-link:hover{
+.nav_link:hover{
     border-bottom: 3px solid #DDA83A;
     box-sizing: border-box;
     background-color: rgba(0, 0, 0, 0.15);
@@ -162,3 +158,11 @@ footer .line{
 
 
 
+@keyframes line {
+        0%{
+            width: 0%;
+        }
+        100%{
+            width: 100%;
+        }
+}

@@ -7,31 +7,31 @@ function submitForm() {
     var hasError = false; 
 
     if (!name) {
-        document.getElementById('name_error').classList.add('active-block');
+        document.getElementById('name-error').classList.add('active-block');
         hasError = true; // true if error occurs
     } else {
-        document.getElementById('name_error').classList.remove('active-block');
+        document.getElementById('name-error').classList.remove('active-block');
     }
 
     if (!update) {
-        document.getElementById('updates_error').classList.add('active-block');
+        document.getElementById('updates-error').classList.add('active-block');
         hasError = true; 
     } else {
-        document.getElementById('updates_error').classList.remove('active-block');
+        document.getElementById('updates-error').classList.remove('active-block');
     }
 
     if (!improv) {
-        document.getElementById('improv_error').classList.add('active-block');
+        document.getElementById('improv-error').classList.add('active-block');
         hasError = true; 
     } else {
-        document.getElementById('improv_error').classList.remove('active-block');
+        document.getElementById('improv-error').classList.remove('active-block');
     }
     
     if (!email.includes('@') || !email.includes('.')) {
-        document.getElementById('mail_error').classList.add('active-block');
+        document.getElementById('mail-error').classList.add('active-block');
         hasError = true;s
     } else {
-        document.getElementById('mail_error').classList.remove('active-block');
+        document.getElementById('mail-error').classList.remove('active-block');
     }
 
     // If any error occurred display error message
@@ -40,15 +40,15 @@ function submitForm() {
     }
 
 
-    document.getElementById("preview_name").textContent = name;
-    document.getElementById("preview_email").textContent = email;
-    document.getElementById("preview_ftime").textContent = getRadioValue("first");
-    document.getElementById("preview_easy").textContent = getRadioValue("easy");
-    document.getElementById("preview_improv").textContent = improv;
-    document.getElementById("preview_satis").textContent = getRadioValue("rating");
-    document.getElementById("preview_recom").textContent = getRadioValue("recom");
-    document.getElementById("preview_updates").textContent = update;
-    document.getElementById("preview_req").textContent = document.getElementById("requests").value;
+    document.getElementById("preview-name").textContent = name;
+    document.getElementById("preview-email").textContent = email;
+    document.getElementById("preview-ftime").textContent = getRadioValue("first");
+    document.getElementById("preview-easy").textContent = getRadioValue("easy");
+    document.getElementById("preview-improv").textContent = improv;
+    document.getElementById("preview-satis").textContent = getRadioValue("rating");
+    document.getElementById("preview-recom").textContent = getRadioValue("recom");
+    document.getElementById("preview-updates").textContent = update;
+    document.getElementById("preview-req").textContent = document.getElementById("requests").value;
 
 
     showPreview();
@@ -70,7 +70,7 @@ function getRadioValue(name){
 
 function showPreview(){
     const previewSection = document.querySelector(".preview");
-    const formSection = document.querySelector(".feed_form");
+    const formSection = document.querySelector(".feed-form");
 
     formSection.classList.add("active-none");
     previewSection.classList.remove("active-none");
@@ -79,7 +79,7 @@ function showPreview(){
 function editPreview() {
     // Hide preview section and show form section
     const previewSection = document.querySelector(".preview");
-    const formSection = document.querySelector(".feed_form");
+    const formSection = document.querySelector(".feed-form");
 
     previewSection.classList.add("active-none");
     formSection.classList.remove("active-none");
