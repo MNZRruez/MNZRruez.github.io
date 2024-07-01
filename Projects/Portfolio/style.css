@@ -293,7 +293,7 @@ section{
 
 /* ABOUT SECTION */
 
-#about-p {
+#about-p, .skill-container {
     display: flex;
     color: whitesmoke;
     align-items: center;
@@ -303,7 +303,7 @@ section{
 
 }
 
-#about-p div{
+#about-p div, .skill-container{
     width: 80%;
     font-size: 3vh;
     letter-spacing: 0.1vh;
@@ -312,6 +312,12 @@ section{
     padding: 5vh;
 
 }
+
+h1{
+    transition: all 0.3s ease-out;
+    font-size: 40px;
+}
+
 #i{
     transition: all 0.3s ease-out;
     font-size: 40px;
@@ -319,7 +325,7 @@ section{
     color: bisque;
 }
 
-.sec2:hover{
+.section:hover{
     #i{
         animation: animate 0.4s ease-in-out ;
     }
@@ -345,7 +351,7 @@ section{
 
 }
 
-
+/* 
 .bg-effect {
     position: relative;
     width: 70%;
@@ -373,7 +379,12 @@ section{
 
 .bg:hover {
     transform: scale(1.2);
-}
+} */
+
+
+
+
+
 
 
 
